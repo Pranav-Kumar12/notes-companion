@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+.mainHeader {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: orange;
+  height: 50px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.btn-div {
+  position: relative;
+}
+
+.add {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  background-color: rgb(210, 35, 210);
+  border: none;
+  padding: 5px 10px;
+  color: #eee;
+  cursor: pointer;
+}
+
+.add:hover {
+  box-shadow: 2px 2px 1px #888888;
+  background-color: #eee;
+  color: rgb(210, 35, 210);
+}
+
+.fa-edit,
+.fa-trash-alt {
+  color: #fff;
+  padding: 5px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+}
+
+.fa-trash-alt {
+  background-color: #e74c3c;
+}
+
+#mainNotesSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  height: 100px;
+  width: 150px;
+  background-color: hsl(0, 0%, 93%);
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.here {
+  background-color: #e9fecb;
+  padding: 5px;
+}
+
+#mainNotesSection {
+  margin-left: 10px;
+}
+
+.note {
+  margin-bottom: 10px;
+}
+
+.edit {
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: rgb(255, 250, 0, 0.1);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  position: fixed; /* Initially fixed to the bottom */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
